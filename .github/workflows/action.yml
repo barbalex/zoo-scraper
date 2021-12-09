@@ -1,0 +1,21 @@
+name: 'Nachtwandeln im September'
+
+on:
+  schedule:
+    - cron: '0 16 * * *'
+    # - cron: '* * * * *'
+
+jobs:
+  fetch-nachtwandeln:
+    runs-on: ubuntu-latest
+    env:
+      MAILGUN_API_KEY: ${{ secrets.MAILGUN_API_KEY }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.5.0
+        with:
+          node-version: '16'
+      - run: npm install
+      - run: node server.js
+        env:
+          MAILGUN_API_KEY: ${{ secrets.MAILGUN_API_KEY }}

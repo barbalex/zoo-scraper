@@ -1,0 +1,16 @@
+{
+  "name": "zoo-scraper",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "bla-start": "npm run server.js"
+  },
+  "author": "Alexander Gabriel",
+  "license": "ISC",
+  "dependencies": {
+    "form-data": "4.0.0",
+    "mailgun.js": "4.1.0",
+    "playwright": "1.17.1"
+  }
+}
