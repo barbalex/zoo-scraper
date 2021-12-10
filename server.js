@@ -48,6 +48,7 @@ const run = async () => {
     myItem.registrations = await (await item.$('.registrations')).innerText()
     myItems.push(myItem)
   }
+  // could do: if (!myItems.length) return browser.close()
   let html =
     '<table style="border-collapse: collapse;"><thead><tr><th style="border: 1px solid #999; padding: 0.5rem; text-align: left;">Datum</th><th style="border: 1px solid #999; padding: 0.5rem; text-align: left;">Anlass</th><th style="border: 1px solid #999; padding: 0.5rem; text-align: left;">Registration</th></tr></thead><tbody>'
   for (const item of myItems) {
