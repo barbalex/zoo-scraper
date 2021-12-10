@@ -67,8 +67,8 @@ const run = async () => {
   console.log('html:', html)
   const messageData = {
     from: 'Nachtwandel-Bot <alex@barbalex.ch>',
-    to: 'alex.barbalex@gmail.com',
-    //to: 'barbara.barbalex@gmail.com, alex.barbalex@gmail.com',
+    //to: 'alex.barbalex@gmail.com',
+    to: 'barbara.barbalex@gmail.com, alex.barbalex@gmail.com',
     subject: 'Nachtwandeln im September',
     html,
   }
