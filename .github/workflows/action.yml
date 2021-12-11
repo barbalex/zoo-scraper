@@ -3,7 +3,7 @@ name: 'Nachtwandeln im September'
 on:
   schedule:
     - cron: '0 16 * * *'
-    - cron: '0 9 * * *'
+    - cron: '0 10 * * *'
 
 jobs:
   fetch-nachtwandeln:
